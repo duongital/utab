@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Sample Web Extension",
+    "description": "Base Level Extension",
+    "version": "0.0.1",
+    "action": {
+        "default_popup": "hello.html",
+        "default_icon": "hello_extensions.png"
+    },
+    "content_scripts": [{
+      "matches": ["*://github.com/parcel-bundler/*"],
+      "js": ["parcel-content-script.ts"]
+    }]
+  }
