@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { today, getLocalTimeZone } from "@internationalized/date";
 
 import { Calendar } from "./components/Calendar";
@@ -17,6 +18,9 @@ export function App() {
           defaultValue={today(getLocalTimeZone())}
         />
       </div>
+
+      {/* analytics by Vercel */}
+      <Analytics />
     </div>
   );
 }
