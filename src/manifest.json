@@ -1,14 +1,19 @@
 {
-    "manifest_version": 3,
-    "name": "Sample Web Extension",
-    "description": "Base Level Extension",
-    "version": "0.0.1",
-    "action": {
-        "default_popup": "hello.html",
-        "default_icon": "hello_extensions.png"
-    },
-    "content_scripts": [{
+  "manifest_version": 3,
+  "name": "uTab Extension",
+  "description": "Your utilities for new tab.",
+  "version": "0.0.1",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "new-tab/index.html"
+  },
+  "content_scripts": [
+    {
       "matches": ["*://github.com/parcel-bundler/*"],
       "js": ["parcel-content-script.ts"]
-    }]
-  }
+    }
+  ]
+}

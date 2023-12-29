@@ -4,13 +4,30 @@
   "description": "",
   "scripts": {
     "start": "parcel watch src/manifest.json --host localhost",
-    "build": "parcel build src/manifest.json"
+    "build:extension": "parcel build src/manifest.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@parcel/config-webextension": "^2.10.3",
-    "parcel": "^2.10.3"
+    "@types/react": "^18.2.45",
+    "autoprefixer": "^10.4.16",
+    "parcel": "^2.10.3",
+    "postcss": "^8.4.32",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.0"
+  },
+  "dependencies": {
+    "@heroicons/react": "1.0.6",
+    "@internationalized/date": "3.0.0",
+    "@react-aria/button": "3.5.1",
+    "@react-aria/calendar": "3.0.0",
+    "@react-aria/focus": "3.6.1",
+    "@react-aria/i18n": "3.0.0-nightly.1575",
+    "@react-aria/visually-hidden": "3.3.1",
+    "@react-stately/calendar": "3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
