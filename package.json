@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel watch src/manifest.json --host localhost",
+    "start:web": "parcel src/new-tab/index.html",
+    "build:web": "parcel build src/new-tab/index.html",
+    "start:extension": "parcel watch src/manifest.json --host localhost",
     "build:extension": "parcel build src/manifest.json"
   },
   "keywords": [],
