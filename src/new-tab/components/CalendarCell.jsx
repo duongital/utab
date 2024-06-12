@@ -49,21 +49,21 @@ export function CalendarCell({ state, date, currentMonth }) {
         className={`w-10 h-10 outline-none group ${
           isRoundedLeft ? "rounded-l-full" : ""
         } ${isRoundedRight ? "rounded-r-full" : ""} ${
-          isSelected ? "bg-violet-300" : ""
+          isSelected ? "bg-primary" : ""
         } ${isDisabled ? "disabled" : ""}`}
       >
         <div
-          className={`w-full h-full rounded-full flex items-center justify-center ${
+          className={`w-full h-full rounded-full flex items-center justify-center cursor-pointer ${
             isDisabled ? "text-gray-400" : ""
           } ${
             // Focus ring, visible while the cell has keyboard focus.
             isFocusVisible
-              ? "ring-2 group-focus:z-2 ring-violet-600 ring-offset-2"
+              ? "ring-2 group-focus:z-2 ring-primary ring-offset-2"
               : ""
           } ${
             // Darker selection background for the start and end.
             isSelectionStart || isSelectionEnd
-              ? "bg-violet-600 text-white hover:bg-violet-700"
+              ? "bg-primary cursor-pointer text-white hover:bg-secondary"
               : ""
           } ${
             // Hover state for cells in the middle of the range.
@@ -72,7 +72,7 @@ export function CalendarCell({ state, date, currentMonth }) {
               : ""
           } ${
             // Hover state for non-selected cells.
-            !isSelected && !isDisabled ? "hover:bg-violet-100" : ""
+            !isSelected && !isDisabled ? "hover:bg-secondary" : ""
           } cursor-default`}
         >
           {formattedDate}
