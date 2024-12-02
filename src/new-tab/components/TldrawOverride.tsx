@@ -5,8 +5,8 @@ import {
   TLEditorComponents,
   track,
   useEditor,
-} from "tldraw";
-import "tldraw/tldraw.css";
+} from "../../../tldraw";
+import "../../../tldraw/tldraw.css";
 import { Button } from "./Button";
 
 export default function TldrawOverride() {
