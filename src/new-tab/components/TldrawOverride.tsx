@@ -5,7 +5,7 @@ import {
   TLEditorComponents,
   track,
   useEditor,
-} from "../../../tldraw";
+} from "../../../tldraw/dist-cjs";
 import "../../../tldraw/tldraw.css";
 import { Button } from "./Button";
 
