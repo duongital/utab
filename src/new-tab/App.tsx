@@ -1,7 +1,6 @@
 import { today, getLocalTimeZone } from "@internationalized/date";
 
 import { Calendar } from "@/components/Calendar";
-import TldrawOverride from "./components/TldrawOverride";
 
 import "@/index.css";
 
@@ -35,9 +34,6 @@ export function App() {
         <button className="btn">Button</button>
         <button className="btn btn-primary">Button</button>
       </div>
-
-      {/* tldraw */}
-      <TldrawOverride />
     </div>
   );
 }

@@ -5,5 +5,5 @@ useful utilities on new tab
 ### start dev mode:
 
 ```bash
-bun run start:web
+npm run start:web
 ```
