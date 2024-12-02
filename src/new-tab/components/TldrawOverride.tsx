@@ -1,19 +1,20 @@
 import { useState } from "react";
-import {
-  stopEventPropagation,
-  Tldraw,
-  TLEditorComponents,
-  track,
-  useEditor,
-} from "../../../tldraw/dist-cjs";
-import "../../../tldraw/tldraw.css";
+// import {
+//   stopEventPropagation,
+//   Tldraw,
+//   TLEditorComponents,
+//   track,
+//   useEditor,
+// } from "../../../tldraw/dist-cjs";
+// import "../../../tldraw/tldraw.css";
 import { Button } from "./Button";
 
 export default function TldrawOverride() {
   return (
     <div>
       {/* <div style={{ position: 'fixed', inset: 0 }}> */}
-      <Tldraw components={components} />
+      {/* <Tldraw components={components} /> */}
+      hi
     </div>
   );
 }
