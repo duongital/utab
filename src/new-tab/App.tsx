@@ -3,6 +3,7 @@ import { today, getLocalTimeZone } from "@internationalized/date";
 import { Calendar } from "@/components/Calendar";
 
 import "@/index.css";
+import TldrawOverride from "./components/TldrawOverride";
 
 export function App() {
   console.log("hello");
@@ -34,6 +35,7 @@ export function App() {
         <button className="btn">Button</button>
         <button className="btn btn-primary">Button</button>
       </div>
+      <TldrawOverride />
     </div>
   );
 }
